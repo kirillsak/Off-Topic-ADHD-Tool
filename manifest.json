@@ -3,6 +3,11 @@
     "name": "Focus Assist",
     "version": "1.0",
     "permissions": ["tabs", "storage", "notifications"],
+    "host_permissions": [
+        "http://localhost/",
+        "http://localhost:8080/*"
+      ],
+ 
     "action": {
       "default_popup": "popup.html"
     },
