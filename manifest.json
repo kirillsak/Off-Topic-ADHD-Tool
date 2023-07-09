@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Assist",
+    "version": "1.0",
+    "permissions": ["tabs", "storage", "notifications"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["background.js"]
+      }
+    ]
+  }
+  
